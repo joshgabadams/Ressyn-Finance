@@ -1,0 +1,167 @@
+body{
+margin:0;
+font-family: instrument-sans, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+background:#f7f8f8ed;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.main-container {
+    width: 90vw;
+    height: 683px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding: 20px;
+    border-radius:25px;
+
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    border-radius: 25px;
+    padding: 50px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    background:
+        radial-gradient(circle at bottom right, #E8D4ED, #D6E6FD 20%, transparent),
+        radial-gradient(circle at top left, #E8D4ED, #D6E6FD 20%, transparent),
+        #F3F1FC;
+}
+
+.header{
+
+position:absolute;
+top:25px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+align-items:center;
+gap:10px;
+background:white;
+padding:10px 25px;
+border-radius:20px;
+
+}
+
+.logo{
+width:auto;
+height:auto;
+}
+
+@keyframes spin{
+
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+
+}
+
+.main-logo{
+
+width:70px;
+margin-bottom:20px;
+animation:spin 8s linear infinite;
+
+}
+
+h1{
+
+font-size:64px;
+color:#2F5ED7;
+margin:20px 0;
+
+}
+
+p{
+
+color:#777;
+font-size:18px;
+
+}
+
+.notify-btn{
+
+margin-top:30px;
+background:#1A1F46;
+color:white;
+padding:16px 30px;
+border:none;
+border-radius:40px;
+font-size:16px;
+cursor:pointer;
+display:inline-flex;
+align-items:center;
+gap:10px;
+transition:all .3s ease;
+
+}
+
+.notify-btn:hover{
+
+transform:translateY(-3px);
+box-shadow:0px 10px 20px rgba(0,0,0,0.15);
+
+}
+
+.email-input{
+
+padding:14px;
+border-radius:30px;
+border:none;
+outline:none;
+margin-top:25px;
+width:250px;
+
+}
+
+.dots{
+
+margin-top:80px;
+display:flex;
+justify-content:center;
+gap:10px;
+
+}
+
+.dot{
+
+width:12px;
+height:12px;
+background:#ddd;
+border-radius:50%;
+
+}
+
+.dot.active{
+
+background:#2F5ED7;
+
+}
+
+.floating{
+
+position:absolute;
+opacity:.7;
+
+}
+
+.left-shape{
+
+left:260px;
+bottom:260px;
+
+}
+
+.right-shape{
+
+right:260px;
+bottom:260px;
+
+}

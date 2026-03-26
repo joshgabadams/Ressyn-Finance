@@ -33,33 +33,34 @@ function App(){
         <img src="assets/logo.svg" className="main-logo"/>
 
         <h1>Coming Soon.</h1>
-        <p>We are currently developing our site.</p>
+        <p>We are currently developing our site.<br/>Be the first to know when we launch.</p>
 
-        <div>
+        <div className="email-row">
           <input
             className="email-input"
             placeholder="Enter your email"
+            type="email"
             value={email}
             onChange={(e)=>setEmail(e.target.value)}
           />
+          <button className="notify-btn" onClick={submitEmail}>
+            📩 Notify Me
+          </button>
         </div>
 
-        <button className="notify-btn" onClick={submitEmail}>
-          📩 Notify Me
-        </button>
+        <div className="divider">or</div>
 
-        {/* New button to Xora */}
-        <a 
-          href="https://xora.ressynfinance.com" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="notify-btn"
-        >
-          🚀 Check out our current innovation
-        </a>
-
-        <img src="assets/logo.svg" className="floating left-shape"/>
-        <img src="assets/Vector.svg" className="floating right-shape"/>
+        <div className="innovation-section">
+          <span className="innovation-label">Check out our current innovation</span>
+          <a
+            href="https://xora.ressynfinance.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="xora-btn"
+          >
+            🚀 Visit Xora
+          </a>
+        </div>
 
         <div className="dots">
           <div className="dot active"></div>
